@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PinPen - Home</title>
+        <link rel="stylesheet" href="home.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="Favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav" id="nav">
+            <div class="logo"><div class="logo_icon">P</div>PinPen</div>
+            <span class="navigations">
+                <a href="home.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href="books1.html" class="books_btn"><i class="fa-solid fa-book-open"></i> Books</a>
+                <div class="popUp Books">
+                    <a href="books1.html">
+                        <button class="popup_btn">Books</button>
+                    </a>
+                    <a href="books2.html">
+                        <button class="popup_btn">Buy Books</button>
+                    </a>
+                </div>
+
+                <a href="profile.html" class="profile_btn"><img src="9.jpg"> <span class="Acc_name">User name</span> </a>
+                <div class="popUp Acc">
+                    <button class="popup_btn LogOut_btn" onclick="out()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</button>
+                </div>
+            </span>
+        </div>
+        <div class="container">
+            <div class="poster">
+                <div class="title">PinPen</div>
+                <div class="slogan">It is the time to pin your pen. <br> share your distinguished pins with others and explore inspiration.</div>
+                <div class="P_letter">P</div>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">كل شيءٍ في الإنسان عادة، إن العادة هي المحرّك الكبير للحياة الإنسانية</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">إن كنت ترغب في الحصول على احترام الآخرين، فالأمر العظيم الذي عليك القيام به هو أن تحترم نفسك. بذلك فقط...باحترام ذاتك ستُجبر الآخرين على احترامك.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">لا يعرف معنى الحياة، إلا من فقدها أو أوشك على فقدانها</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">يحدث أحياناً أن نلتقي بأشخاص نجهلهم تمام الجهل، ومع ذلك نشعر بالاهتمام بهم وبدافع يقربنا منهم قبل أن نبادلهم كلمة واحدة.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">إن الخطأ شيء رائع فعلاً لأنه يؤدي إلى الحقيقة.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">الناس الطيبون لا ينتظرون أن يُحسن أحد إليهم حتى يحسنوا إليه، إنهم يحبون من تلقاء أنفسهم خدمة من هم في حاجة إلى هذه الخدمة.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">لا يكمن سر الوجود البشري في البقاء على قيد الحياة فحسب، بل في العثور على شيء يعيش من أجله.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">ماذا لو كان العنكبوت الذي قتلته في غرفتك، يظن طوال حياته أنك رفيقه في السكن.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">هناك أشياء يخاف الإنسان أن يقولها حتى لنفسه، وكل رجل رزين لديه عدد من مثل هذه الأشياء مخزنة في عقله.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cont-card">
+                        <div class="card_text">السخرية هي الملاذ الأخير لشعب متواضع وبسيط.</div>
+                        <div class="card_author"> - ديستويفسكي</div>
+                    </div>
+                    <div class="cont-data">
+                        <a href="profile.html">
+                            <img src="9.jpg">
+                            <span class="cont-publisher">User name</span>
+                        </a>
+                        <i class="fa-regular fa-copy"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="noMorePins">No more pins!</div>
+        </div>
+        <div class="snackbar" id="snackbar"></div>
+        <script src="home.js"></script>
+        <script src="out.js"></script>
+    </body>
+</html>

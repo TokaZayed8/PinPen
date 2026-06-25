@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PinPen - Login</title>
+        <link rel="stylesheet" href="login.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="Favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <h2>PinPen</h2>
+            <div class="row about">
+                <span>Don't have an account?</span>
+                <span>Sign up</span>
+            </div>
+            <div class="row uinfo">
+                <span>
+                    <label for="eml">Email</label>
+                </span>
+                <span>
+                    <input type="email" id="eml" placeholder="Enter your email">
+                </span>
+            </div>
+            <div class="row uinfo">
+                <span>
+                    <label for="pswd">Password</label>
+                </span>
+                <span>
+                    <input type="password" id="pswd" placeholder="Enter your password">
+                </span>
+            </div>
+            <p id="message"></p>
+            <button class="btn" onclick="verifyPassword()">Login</button>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>

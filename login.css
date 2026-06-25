@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Rubik+Distressed&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgba(172, 252, 255, 1.5);
+}
+.main {
+    background-color: #ffffff;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    padding: 50px 35px;
+    height: 500px;
+    width: 400px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+    .main h2 {
+        color: #008e9a;
+        margin-bottom: 80px;
+        font-family: 'Mochiy Pop One', sans-serif;
+        letter-spacing: 1px;
+        font-size: 2em;
+    }
+label {
+    padding-right: 3px;
+    color: #008e9a;
+    font-size: 1.3em;
+}
+input{
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color:#ffffff;
+}
+.btn {
+    color: #001128;
+    padding: 12px;
+    background-color: rgba(172, 252, 255, 1.5);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin: 30px 60px 0 60px;
+    transition: 0.7s ease;
+    font-size: 1.3em;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    border: 2px solid #008e9a;
+ 
+}
+    .btn:hover {
+        border: 1px solid;
+        border-radius: 10px;
+        box-shadow: 0 0 40px rgba(100,100,100,0.3);
+        color: #ffffff;
+        background-color: #008e9a;
+        cursor: pointer;
+        transform: scale(1.1)
+    }
+
+#message{
+    color : #ff0000;
+    font-weight:500;
+    font-size: 1.1em;
+}
+
+span {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;   
+}
+.about {
+    justify-content: space-between;
+    color: #008e9a;
+    padding-bottom: 30px;
+}
+
+.uinfo{
+    justify-content: space-between;
+}

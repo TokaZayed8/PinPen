@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PinPen - Books</title>
+        <link rel="stylesheet" href="books1.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="Favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav" id="nav">
+            <div class="logo"><div class="logo_icon">P</div>PinPen</div>
+            <span class="navigations">
+                <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href="books1.html" class="books_btn activee"><i class="fa-solid fa-book-open"></i> Books</a>
+                <div class="popUp Books">
+                    <a href="books1.html">
+                        <button class="popup_btn">Books</button>
+                    </a>
+                    <a href="books2.html">
+                        <button class="popup_btn">Buy Books</button>
+                    </a>
+                </div>
+
+                <a href="profile.html" class="profile_btn"><img src="9.jpg"> <span class="Acc_name">User name</span></a>
+                <div class="popUp Acc">
+                    <button class="popup_btn LogOut_btn" onclick="out()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</button>
+                </div>
+            </span>
+        </div>
+
+        <div class="poster">
+            <div class="title">Books</div>
+            <div class="slogan">Explore our curated book collection.</div>
+            <div class="P_letter">B</div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="crime.jpj.jpg" style="width:100%; border-radius:10px;">
+            </div>
+            <div class="mySlides fade">
+                <img src="hanan lashin.jpj.jpg" style="width:100%; border-radius:10px;">
+            </div>
+            <div class="mySlides fade">
+                <img src="hipta.jpg" style="width:100%; border-radius:10px;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <ul style="position:relative; top:0; margin: 320px 60px 30px 60px;">
+            <li>Crime and Punishment — Dostoevsky</li>
+            <li>Notes from Underground — Dostoevsky</li>
+            <li>Koyikol — Hanan Lashin</li>
+            <li>What the Sea Told — Sandra</li>
+            <li>Hepta — Ahmed Mourad</li>
+            <li>To Infinity — Mimi</li>
+        </ul>
+
+        <div style="text-align:center; margin: 30px;">
+            <input type="button" value="Buy Now" onclick="window.location.href='books2.html'">
+        </div>
+
+        <script src="books1.js"></script>
+        <script src="out.js"></script>
+    </body>
+</html>

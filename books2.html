@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PinPen - Buy Books</title>
+        <link rel="stylesheet" href="books2.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="Favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav" id="nav">
+            <div class="logo"><div class="logo_icon">P</div>PinPen</div>
+            <span class="navigations">
+                <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href="books1.html" class="books_btn active"><i class="fa-solid fa-book-open"></i> Books</a>
+                <div class="popUp Books">
+                    <a href="books1.html">
+                        <button class="popup_btn">Books</button>
+                    </a>
+                    <a href="books2.html">
+                        <button class="popup_btn">Buy Books</button>
+                    </a>
+                </div>
+
+                <a href="profile.html" class="profile_btn"><img src="9.jpg"> <span class="Acc_name">User name</span></a>
+                <div class="popUp Acc">
+                    <button class="popup_btn LogOut_btn" onclick="out()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</button>
+                </div>
+            </span>
+        </div>
+
+        <div class="BigContainer">
+            <div class="container">
+                <div class="imgs">
+                    <img src="crime.jpj.jpg" width="200px" height="300px" style="border-radius:10px;">
+                </div>
+                <div class="text">
+                    <h2>رواية الجريمة والعقاب</h2>
+                    <p>تُعد من أشهر أعمال الكاتب الروسي فيودور دوستويفسكي، تتطرق لمشكلة حيوية ومعاصرة وهي الجريمة وعلاقتها بالمشاكل الاجتماعية والأخلاقية للواقع.</p>
+                    <p><strong>Price: 20$</strong></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="imgs">
+                    <img src="messages.jpj.jpg" width="200px" height="300px" style="border-radius:10px;">
+                </div>
+                <div class="text">
+                    <h2>رسائل من تحت الأرض</h2>
+                    <p>رواية رسائل من تحت الأرض أو الإنسان الصرصار هي إحدى أهم روايات الكاتب الروسي فيودور دوستويفسكي، تحكي عن موظف مدني متقاعد يقرر الانعزال عن العالم.</p>
+                    <p><strong>Price: 20$</strong></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="imgs">
+                    <img src="hanan lashin.jpj.jpg" width="200px" height="300px" style="border-radius:10px;">
+                </div>
+                <div class="text">
+                    <h2>كويكول</h2>
+                    <p>"مرحبًا أيّها المحارب؛ هل سافرت معنا لثلاث رحلات محلقًا على جناح صقر إلى مملكة البلاغة؟"</p>
+                    <p><strong>Price: 20$</strong></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="imgs">
+                    <img src="sanda.jpg" width="200px" height="300px" style="border-radius:10px;">
+                </div>
+                <div class="text">
+                    <h2>ما رواه البحر</h2>
+                    <p>رواية رومانسية مشوقة تأخذك في رحلة عبر الزمن والمشاعر، لا تستطيع إنهاءها حتى تصل للنهاية المفاجئة.</p>
+                    <p><strong>Price: 20$</strong></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="imgs">
+                    <img src="hipta.jpg" width="200px" height="300px" style="border-radius:10px;">
+                </div>
+                <div class="text">
+                    <h2>هيبتا</h2>
+                    <p>"هيبتا" هو رقم 7 عند الإغريق، وفي الرواية نجد السبع مراحل في الحب: البداية واللقاء والعلاقة والإدراك والحقيقة والقرار وهيبتا.</p>
+                    <p><strong>Price: 20$</strong></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="imgs">
+                    <img src="mimi.jpg" width="200px" height="300px" style="border-radius:10px;">
+                </div>
+                <div class="text">
+                    <h2>إلى ما لا نهاية</h2>
+                    <p>رواية أسطورية يمتزج فيها الخيال بالواقع، قصة حب ملحمية تتحول فجأة إلى رحلة تبحر معك إلى التاريخ.</p>
+                    <p><strong>Price: 20$</strong></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="out.js"></script>
+    </body>
+</html>

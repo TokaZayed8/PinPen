@@ -1,0 +1,222 @@
+@font-face {
+    font-family: BlackBones;
+    src: url(../fonts/BlackBonesPersonalUse-L3O6n.otf);
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+    border-radius: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #d9d9d9;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #d1d1d1;
+    }
+
+.nav {
+    height: 60px;
+    padding: 0px 60px;
+    position: fixed;
+    width: calc(100% - 120px);
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+    .nav .logo {
+        font-size: 30px;
+        font-family: BlackBones;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        float: left;
+        user-select: none;
+    }
+
+.logo_icon {
+    margin-right: 10px;
+    background-color: rgba(172, 252, 255, 0.64);
+    color: #008e9a;
+    padding: 10px 13px;
+    height: 20px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.navigations {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+    .navigations a {
+        color: #585858;
+        margin: 0px 10px;
+        font-size: 17px;
+        padding: 4px 10px;
+        border-radius: 10px;
+        font-family: lato;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        user-select: none;
+    }
+
+        .navigations a.active {
+            color: #008e9a;
+        }
+
+        .navigations a i {
+            border-radius: 100px;
+            margin-right: 10px;
+        }
+
+        .navigations a:hover {
+            color: #008e9a;
+            border-color: #008e9a;
+        }
+
+    .navigations img {
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+        margin-right: 10px;
+    }
+
+.Acc_name {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.popUp {
+    width: 230px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    visibility: hidden;
+}
+
+    .popUp.Acc {
+        right: 10px;
+        top: 50px;
+    }
+
+    .popUp.Books {
+        top: 45px;
+    }
+
+.profile_btn:hover + div, .profile_btn + div:hover, .books_btn:hover + div, .books_btn + div:hover {
+    visibility: visible;
+}
+
+.popUp button {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.popup_btn:hover {
+    background-color: rgba(111, 210, 214, 0.34);
+    color: rgb(0, 107, 111);
+}
+
+.popUp button i {
+    margin-right: 10px;
+}
+
+.LogOut_btn:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+
+.BigContainer {
+    padding: 30px 40px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(100,100,100,0.6);
+    backdrop-filter: blur(10px);
+    padding: 30px 30px;
+    height: 400px;
+    width: 450px;
+}
+
+.text {
+    text-align: center;
+}
+
+    .text h2 {
+        color: #008e9a;
+        font-size: 1.5em;
+        text-align: center;
+        word-spacing: 1px;
+        padding: 2px;
+    }
+
+    .text p {
+        color: black;
+        font-size: 1.2em;
+        direction: rtl;
+        text-align: center;
+        word-spacing: 1px;
+        padding: 2px;
+    }
+
+.btn {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: rgb(172, 252, 255);
+    transition: 1.7s ease;
+}
+
+    .btn:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: #008e9a;
+    }

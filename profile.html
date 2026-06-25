@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PinPen - Profile</title>
+        <link rel="stylesheet" href="profile.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="Favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav" id="nav">
+            <div class="logo"><div class="logo_icon">P</div>PinPen</div>
+            <span class="navigations">
+                <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href="books1.html" class="books_btn"><i class="fa-solid fa-book-open"></i> Books</a>
+                <div class="popUp Books">
+                    <a href="books1.html">
+                        <button class="popup_btn">Books</button>
+                    </a>
+                    <a href="books2.html">
+                        <button class="popup_btn">Buy Books</button>
+                    </a>
+                </div>
+
+                <a href="profile.html" class="profile_btn active"><img src="9.jpg"> <span class="Acc_name" id="u">User name</span></a>
+                <div class="popUp Acc">
+                    <button class="popup_btn LogOut_btn" onclick="out()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</button>
+                </div>
+            </span>
+        </div>
+
+        <section style="padding: 80px 60px 30px 60px;">
+            <h1>Profile</h1>
+            <hr>
+            <br>
+            <table>
+                <thead>Account Info</thead>
+                <tr>
+                    <td><img src="9.jpg" width="100px" height="100px"></td>
+                    <td>
+                        <h2 id="un">User name</h2>
+                        <h4>ammmmmt@gmail.com</h4>
+                    </td>
+                    <td>
+                        <i class="fa-regular fa-pen-to-square edit" onclick="edit()" title="Edit name"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h5>Joined</h5></td>
+                    <td><h6>2024</h6></td>
+                </tr>
+                <tr>
+                    <td><h5>Pins</h5></td>
+                    <td><h6>14</h6></td>
+                </tr>
+                <tr>
+                    <td><h5>Likes</h5></td>
+                    <td><h6>0</h6></td>
+                </tr>
+            </table>
+        </section>
+
+        <script src="editname.js"></script>
+        <script src="out.js"></script>
+    </body>
+</html>
